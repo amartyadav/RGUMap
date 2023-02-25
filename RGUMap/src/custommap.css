@@ -1,0 +1,21 @@
+.image-container {
+    position: relative;
+  }
+  
+  .map {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* Set the initial style of the map element */
+    border: 2px solid transparent;
+  }
+  
+  .map:hover {
+    /* Set the style of the map element on hover */
+    border: 2px solid red;
+    /* Or change the background color instead of border */
+    /* background-color: yellow; */
+  }
+  
