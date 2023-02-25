@@ -31,9 +31,43 @@ class Welcome extends PureComponent<Props, State> {
                         </Col>
                         <Col xs={4}/>
                     </Row>
+                    <br/>
                     <Row>
                         <Col>
                             <p>Sir Ian Wood Building</p>
+                            <button onClick={() => {
+                                window.location.href = '/siwb'
+                            }}>
+                                <img className='buildingIconImage' src={siwbImg} width="60" height="30" />
+                            </button>
+                        </Col>
+                    </Row>
+                    <br/>
+                    <Row>
+                        <Col>
+                            <p>Ishbel Gordon Building</p>
+                            <button onClick={() => {
+                                window.location.href = '/siwb'
+                            }}>
+                                <img src={siwbImg} width="60" height="30" />
+                            </button>
+                        </Col>
+                    </Row>
+                    <br/>
+                    <Row>
+                        <Col>
+                            <p>Aberdeen Business School</p>
+                            <button onClick={() => {
+                                window.location.href = '/siwb'
+                            }}>
+                                <img src={siwbImg} width="60" height="30" />
+                            </button>
+                        </Col>
+                    </Row>
+                    <br/>
+                    <Row>
+                        <Col>
+                            <p>Gray's School Of Art</p>
                             <button onClick={() => {
                                 window.location.href = '/siwb'
                             }}>
