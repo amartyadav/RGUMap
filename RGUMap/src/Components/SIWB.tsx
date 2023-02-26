@@ -1,6 +1,6 @@
 import React, { Component, PureComponent, ReactNode, useEffect } from 'react';
 import $ from "jquery";
-import './SIWB.css';
+//import './SIWB.css';
 import ImageMapper from 'react-image-mapper';
 
 
@@ -16,26 +16,6 @@ interface State { }
 class SIWB extends Component {
     render() {
         console.log(window);
-
-        // const map = {
-        //     name: 'image-map',
-        //     areas: [
-        //         { id: "n502", href: "n502", coords: [252, 368, 370, 344, 484, 324, 574, 322, 640, 344, 701, 388, 739, 430, 745, 439, 695, 485, 679, 476, 631, 441, 594, 419, 537, 412, 506, 412, 403, 428, 344, 436, 283, 445, 263, 434, 259, 401, 256, 390, 261, 419], shape: "poly" },
-        //         { id: "n508", href: "n508", coords: [750, 456, 881, 614, 818, 667, 686, 502], shape: "poly" },
-        //         { id: "n509", href: "n509", coords: [824, 667, 881, 614, 971, 708, 940, 781, 879, 743], shape: "poly" },
-        //         { id: "n523", href: "n523", coords: [1223, 572, 1302, 509, 1354, 568, 1269, 636], shape: "poly" },
-        //         { id: "n525", href: "n525", coords: [1308, 502, 1383, 441, 1436, 498, 1357, 570], shape: "poly" },
-        //         { id: "n526", href: "n526", coords: [1392, 434, 1427, 406, 1477, 460, 1442, 493, 1394, 443], shape: "poly" },
-        //         { id: "n528", href: "n528", coords: [1436, 397, 1528, 338, 1563, 410, 1484, 463, 1440, 406], shape: "poly" },
-        //         { id: "n529", href: "n529", coords: [1530, 331, 1639, 307, 1648, 375, 1558, 406], shape: "poly" },
-        //         { id: "n530", href: "n530", coords: [1642, 298, 1834, 342, 1808, 408, 1657, 379], shape: "poly" },
-        //         { id: "n533", href: "n533", coords: [1861, 303, 1990, 364, 1973, 388, 2111, 465, 2040, 623, 1780, 485, 1815, 410], shape: "poly" },
-        //         { id: "n501", href: "n501", coords: [267, 456, 544, 419, 544, 493, 300, 526, 278, 493], shape: "poly" },
-        //         { id: "n527", href: "n527", coords: [1473, 505, 1629, 408, 1642, 476, 1510, 557], shape: "poly" },
-        //         { id: "n515", href: "n515", coords: [1063, 817, 1175, 758, 1210, 799, 1155, 861, 1074, 876], shape: "poly" },
-        //         { id: "n540", href: "n540", coords: [1582, 593, 1808, 703, 1791, 731, 1760, 766, 1683, 788, 1635, 779, 1576, 725, 1560, 681, 1560, 639], shape: "poly" },
-        //     ],
-        // };
 
         const map = {
             name: 'image-map',
