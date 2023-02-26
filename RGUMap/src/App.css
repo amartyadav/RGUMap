@@ -1,18 +1,40 @@
-#root {
-  max-width: 1280px;
-  margin: 0;
-  padding: 2rem;
-  /* text-align: center; */
+ /* #root { */
+  /* max-width: 1280px; */
+  /* margin: 0; */
+  /* padding: 2rem; */
+/* }  */
+.App{
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
 }
 
 .buildingIconImage {
-  width: 60px;
-  height: 30px;
-  border-radius: 50%;
-  border: 2px solid #646cff;
-  background-color: #1a1a1a;
   cursor: pointer;
   transition: border-color 0.25s;
   align-items: center;
+  padding-left: 20px;
+  padding-right: 20px;
+}
 
+contentScrollWelcome {
+  overflow: scroll;
+}
+
+/* element with class stickyTitle should not scroll up. it should stay stuck on top*/
+.stickyTitle {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  min-height: max-content;
+  border-radius: 5px;
+  background-color: #712177;
+  width: 100%;
+}
+
+p{
+  font-size: 1.5rem;
+  color: #000000;
+  font-weight: bold;
+  text-align: center;
 }
