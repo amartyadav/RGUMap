@@ -14,16 +14,6 @@ interface Props { }
 interface State { }
 
 class SIWB extends Component {
-    constructor(props: Props) {
-        super(props);
-        this.state = {
-            selectedRooms: [],
-            map: {
-                name: '',
-                areas: [],
-            },
-        };
-    }
 
     // handleRoomClick = (area: any) => {
     //     const { selectedRooms } = this.state;
@@ -104,6 +94,7 @@ class SIWB extends Component {
                     href: "n508",
                     coords: [180, 59, 197, 45, 237, 94, 218, 110],
                     shape: "poly",
+                    stayMultiHighlighted: true,
                 },
                 {
                     id: "n509",
@@ -198,7 +189,8 @@ class SIWB extends Component {
                 <h1>SIWB</h1>
                 <div className="image-container" style={{ overflowX: "auto" }}>
                     <ImageMapper src={floorplansiwb} map={map}
-                        fillColor="rgba(255, 0, 0, 0.5)" />
+                        fillColor="rgba(255, 0, 0, 0.5)"
+                         />
                 </div>
             </>
         );
