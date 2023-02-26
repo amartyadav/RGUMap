@@ -7,17 +7,20 @@ import Col from 'react-bootstrap/Col';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-import siwbImg from '../assets/siwb.png';
-
-interface Props {}
-interface State {}
+import siwbImg from '../assets/siwb sharpen.png';
+import igbImg from '../assets/ishbel sharpen.png';
+import annexImg from '../assets/annexe sharpen.png';
+import grayImg from '../assets/ray school sharpen.png';
+//import rguLogo from '../assets/rguLogo.svg';
+interface Props { }
+interface State { }
 
 class Welcome extends PureComponent<Props, State> {
     constructor(props: Props) {
         super(props)
 
         this.state = {
-            
+
         }
     }
 
@@ -25,56 +28,67 @@ class Welcome extends PureComponent<Props, State> {
         return (
             <>
                 <Container>
-                    <Row>
-                        <Col xs={8}>
-                            <h4>Welcome to the interactive RGU Map</h4>
-                        </Col>
-                        <Col xs={4}/>
-                    </Row>
-                    <br/>
-                    <Row>
+                    <div className='stickyTitle'>
+                        <Row >
+                            <Col xs={8}>
+                                <h4 style={{color: "white", paddingLeft: "20px"}}>RGU Map</h4>
+                            </Col>
+                            <Col xs={4} >
+                                {/* <img src={rguLogo} width="30" height="30" style={{paddingRight: "20px"}} /> */}
+                            </Col>
+                        </Row>
+                    </div>
+
+                    <div className='contentScrollWelcome'>
+                    <br />
+                    <Row className='buildingIconImage'>
                         <Col>
                             <p>Sir Ian Wood Building</p>
-                            <button onClick={() => {
+                            <button style={{border: "none", background: "none", boxShadow: "2px 2px 2px 3px #d3d3d3"}}
+                            onClick={() => {
                                 window.location.href = '/siwb'
                             }}>
-                                <img className='buildingIconImage' src={siwbImg} width="60" height="30" />
+                                <img src={siwbImg} width="300" />
                             </button>
                         </Col>
                     </Row>
-                    <br/>
-                    <Row>
+                    <br />
+                    <Row className='buildingIconImage'>
                         <Col>
                             <p>Ishbel Gordon Building</p>
-                            <button onClick={() => {
+                            <button style={{border: "none", background: "none", boxShadow: "2px 2px 2px 3px #d3d3d3"}}
+                            onClick={() => {
                                 window.location.href = '/siwb'
                             }}>
-                                <img src={siwbImg} width="60" height="30" />
+                                <img src={igbImg} width="300" height="200" />
                             </button>
                         </Col>
                     </Row>
-                    <br/>
-                    <Row>
+                    <br />
+                    <Row className='buildingIconImage'>
                         <Col>
-                            <p>Aberdeen Business School</p>
-                            <button onClick={() => {
+                            <p>Garthdee House Annexe</p>
+                            <button style={{border: "none", background: "none", boxShadow: "2px 2px 2px 3px #d3d3d3"}}
+                            onClick={() => {
                                 window.location.href = '/siwb'
                             }}>
-                                <img src={siwbImg} width="60" height="30" />
+                                <img src={annexImg} width="300" height="190" />
                             </button>
                         </Col>
                     </Row>
-                    <br/>
-                    <Row>
+                    <br />
+                    <Row className='buildingIconImage'>
                         <Col>
                             <p>Gray's School Of Art</p>
-                            <button onClick={() => {
+                            <button style={{border: "none", background: "none", boxShadow: "2px 2px 2px 3px #d3d3d3"}}
+                            onClick={() => {
                                 window.location.href = '/siwb'
                             }}>
-                                <img src={siwbImg} width="60" height="30" />
+                                <img src={grayImg} width="300" height="180" />
                             </button>
                         </Col>
                     </Row>
+                    </div>
 
                 </Container>
             </>

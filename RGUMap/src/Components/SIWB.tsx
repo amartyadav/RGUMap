@@ -1,82 +1,18 @@
-import React, { Component, PureComponent, ReactNode, useEffect } from 'react';
+import React, {Component} from 'react';
 import $ from "jquery";
 // import './SIWB.css';
-// import './SIWB.js';
 import ImageMapper from 'react-image-mapper';
 
 
-import floorplansiwb from '../assets/resizenewsiwb.jpg'
+import floorplansiwb from '../assets/resizenewsiwb.png';
 
 //import '/src/custommap.css'
 
 
 interface Props { }
-interface State { }
+interface State { } 
 
 class SIWB extends Component {
-
-    // handleRoomClick = (area: any) => {
-    //     const { selectedRooms } = this.state;
-    //     const isSelected = selectedRooms.includes(area.id);
-
-    //     let updatedRooms: string[];
-    //     if (isSelected) {
-    //       updatedRooms = selectedRooms.filter((roomId) => roomId !== area.id);
-    //     } else {
-    //       updatedRooms = [...selectedRooms, area.id];
-    //     }
-
-    //     const updatedMap = {
-    //       ...this.state.map,
-    //       areas: this.state.map.areas.map((mapArea: any) => ({
-    //         ...mapArea,
-    //         fillColor: updatedRooms.includes(mapArea.id) ? 'rgba(255, 0, 0, 0.5)' : '',
-    //       })),
-    //     };
-
-    //     this.setState({
-    //       selectedRooms: updatedRooms,
-    //       map: updatedMap,
-    //     });
-    //   };
-
-    //----------------------------------------------------------------------------------------
-    // Second code attempt
-
-    // handleRoomClick = (area: any) => {
-    // const { selectedRooms } = this.state;
-    // const isSelected = selectedRooms.includes(area.id);
-    // if (isSelected) {
-    //     this.setState({
-    //       selectedRooms: selectedRooms.filter(id => id !== area.id),
-    //     });
-    //   } else {
-    //     this.setState({
-    //       selectedRooms: [...selectedRooms, area.id],
-    //     });
-    //   }
-    //   };
-    //-----------------------------------------------------------------------------------------------------------------------------
-    // First attemp code
-
-    //   handleRoomClick = (room: any) => {
-    //     // check if the room is already selected
-    //     const isSelected = this.state.selectedRooms.includes(room.id);
-
-    //     // update the selected rooms array based on the current selection
-    //     let selectedRooms;
-    //     if (isSelected) {
-    //       selectedRooms = this.state.selectedRooms.filter(id => id !== room.id);
-    //     } else {
-    //       selectedRooms = [...this.state.selectedRooms, room.id];
-    //     }
-
-    //     // update the component state with the new selection
-    //     this.setState({
-    //       selectedRooms,
-    //     });
-    //   };
-
     render() {
         console.log(window);
         const map = {

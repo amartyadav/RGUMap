@@ -14,8 +14,6 @@ function App() {
         <Route exact path="/" element={<Welcome />} />
         <Route exact path="/siwb" element={<SIWB />} />
       </Routes>
-
-
     </div>
   )
 }
